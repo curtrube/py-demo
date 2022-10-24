@@ -1,5 +1,4 @@
 # filename = "pi_digits.txt"
-from cmath import pi
 
 
 filename = "pi_million_digits.txt"
