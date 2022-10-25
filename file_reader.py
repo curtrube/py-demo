@@ -1,20 +1,21 @@
 # filename = "pi_digits.txt"
-
-
 filename = "pi_million_digits.txt"
-birthday = "09271992"
-
-with open(filename) as file_object:
-    lines = file_object.readlines()
-
 pi_string = ""
-for line in lines:
-    pi_string += line.strip()
 
-# print(pi_string[:52])
-# print(len(pi_string))
+while True:
+    birthday = input("Enter your birthday in `MMDDYYYY` format: ")
 
-if birthday in pi_string:
-    print("HooRay! Your birthday is in the first million digits of Pi")
-else:
-    print("Sorry, your birthday is not the first million digits of Pi")
+    if len(birthday) != 8:
+        print("Invalid Input")
+
+    else:
+        with open(filename) as file_object:
+            lines = file_object.readlines()
+
+        for line in lines:
+            pi_string += line.strip()
+
+        if birthday in pi_string:
+            print("HooRay! Your birthday is in the first million digits of Pi")
+        else:
+            print("Sorry, your birthday is not the first million digits of Pi")

@@ -1,0 +1,3 @@
+python is general purpose programming language
+python is easy to get started
+with python you can automate tedious tasks
