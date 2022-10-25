@@ -11,6 +11,6 @@ while True:
     try:
         answer = int(first_number) / int(second_number)
     except ZeroDivisionError:
-        print("You can't divide by zero")
+        print("You can't divide by 0!")
     else:
         print(f"Answer: {answer}")
